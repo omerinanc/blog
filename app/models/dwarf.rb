@@ -1,0 +1,2 @@
+class Dwarf < ApplicationRecord
+end

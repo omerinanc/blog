@@ -1,0 +1,32 @@
+<%= form_with(model: dwarf) do |form| %>
+  <% if dwarf.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(dwarf.errors.count, "error") %> prohibited this dwarf from being saved:</h2>
+
+      <ul>
+        <% dwarf.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label : %>
+    <%= form.text_field : %>
+  </div>
+
+  <div class="field">
+    <%= form.label : %>
+    <%= form.text_field : %>
+  </div>
+
+  <div class="field">
+    <%= form.label : %>
+    <%= form.text_field : %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

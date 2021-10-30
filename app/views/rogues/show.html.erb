@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @rogue.name %>
+</p>
+
+<p>
+  <strong>Weapon:</strong>
+  <%= @rogue.weapon %>
+</p>
+
+<p>
+  <strong>Health:</strong>
+  <%= @rogue.health %>
+</p>
+
+<%= link_to 'Edit', edit_rogue_path(@rogue) %> |
+<%= link_to 'Back', rogues_path %>

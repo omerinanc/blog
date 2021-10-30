@@ -1,0 +1,32 @@
+<%= form_with(model: rogue) do |form| %>
+  <% if rogue.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(rogue.errors.count, "error") %> prohibited this rogue from being saved:</h2>
+
+      <ul>
+        <% rogue.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weapon %>
+    <%= form.text_field :weapon %>
+  </div>
+
+  <div class="field">
+    <%= form.label :health %>
+    <%= form.number_field :health %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

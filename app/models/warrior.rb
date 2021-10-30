@@ -1,0 +1,2 @@
+class Warrior < ApplicationRecord
+end
