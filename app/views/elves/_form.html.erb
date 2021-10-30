@@ -1,10 +1,10 @@
-<%= form_with(model: dwarf) do |form| %>
-  <% if dwarf.errors.any? %>
+<%= form_with(model: elf) do |form| %>
+  <% if elf.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(dwarf.errors.count, "error") %> prohibited this dwarf from being saved:</h2>
+      <h2><%= pluralize(elf.errors.count, "error") %> prohibited this elf from being saved:</h2>
 
       <ul>
-        <% dwarf.errors.each do |error| %>
+        <% elf.errors.each do |error| %>
           <li><%= error.full_message %></li>
         <% end %>
       </ul>
@@ -17,13 +17,13 @@
   </div>
 
   <div class="field">
-    <%= form.label :height%>
-    <%= form.text_field :height %>
+    <%= form.label :level %>
+    <%= form.number_field :level %>
   </div>
 
   <div class="field">
-    <%= form.label :"armor_class" %>
-    <%= form.text_field :armor_class %>
+    <%= form.label :damage %>
+    <%= form.number_field :damage %>
   </div>
 
   <div class="actions">

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @elf.name %>
+</p>
+
+<p>
+  <strong>Level:</strong>
+  <%= @elf.level %>
+</p>
+
+<p>
+  <strong>Damage:</strong>
+  <%= @elf.damage %>
+</p>
+
+<%= link_to 'Edit', edit_elf_path(@elf) %> |
+<%= link_to 'Back', elves_path %>

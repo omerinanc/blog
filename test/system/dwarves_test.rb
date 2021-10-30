@@ -14,7 +14,9 @@ class DwarvesTest < ApplicationSystemTestCase
     visit dwarves_url
     click_on "New Dwarf"
 
-    fill_in "", with: @dwarf.
+    fill_in "Damage", with: @dwarf.damage
+    fill_in "Level", with: @dwarf.level
+    fill_in "Name", with: @dwarf.name
     click_on "Create Dwarf"
 
     assert_text "Dwarf was successfully created"
@@ -25,7 +27,9 @@ class DwarvesTest < ApplicationSystemTestCase
     visit dwarves_url
     click_on "Edit", match: :first
 
-    fill_in "", with: @dwarf.
+    fill_in "Damage", with: @dwarf.damage
+    fill_in "Level", with: @dwarf.level
+    fill_in "Name", with: @dwarf.name
     click_on "Update Dwarf"
 
     assert_text "Dwarf was successfully updated"

@@ -64,6 +64,6 @@ class DwarvesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def dwarf_params
-      params.require(:dwarf).permit(:, :, :)
+      params.require(:dwarf).permit(:name, :height, :armor_class)
     end
 end

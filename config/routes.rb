@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :elves
   resources :dwarves
   resources :rogues
   resources :wizards

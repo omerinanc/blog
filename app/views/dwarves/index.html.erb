@@ -5,9 +5,9 @@
 <table>
   <thead>
     <tr>
-      <th></th>
-      <th></th>
-      <th></th>
+      <th>Name</th>
+      <th>Height</th>
+      <th>armor_class</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -15,9 +15,9 @@
   <tbody>
     <% @dwarves.each do |dwarf| %>
       <tr>
-        <td><%= dwarf. %></td>
-        <td><%= dwarf. %></td>
-        <td><%= dwarf. %></td>
+        <td><%= dwarf.name %></td>
+        <td><%= dwarf.height %></td>
+        <td><%= dwarf.armor_class %></td>
         <td><%= link_to 'Show', dwarf %></td>
         <td><%= link_to 'Edit', edit_dwarf_path(dwarf) %></td>
         <td><%= link_to 'Destroy', dwarf, method: :delete, data: { confirm: 'Are you sure?' } %></td>

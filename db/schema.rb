@@ -10,7 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_10_30_172726) do
+ActiveRecord::Schema.define(version: 2021_10_30_192301) do
+
+  create_table "dwarves", force: :cascade do |t|
+    t.string "name"
+    t.integer "height"
+    t.integer "armor_class"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "elves", force: :cascade do |t|
+    t.string "name"
+    t.integer "level"
+    t.integer "damage"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "rogues", force: :cascade do |t|
     t.string "name"

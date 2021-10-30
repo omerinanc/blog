@@ -1,0 +1,2 @@
+class Elf < ApplicationRecord
+end
